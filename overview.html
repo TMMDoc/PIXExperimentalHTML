@@ -1,0 +1,592 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="res/bento.css">
+  <link rel="stylesheet" href="res/site.css">
+  <link rel="stylesheet" href="res/tree.css">
+  <link rel="stylesheet" href="res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Toolbar overview</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="img/white-logo.png" width="103" height="34" /></div>
+        <div><p>Pix User Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="index.html">Welcome to Pix</a></li>
+  <li><button class="tree blank"></button><a href="installation.html">Installation</a></li>
+  <li><button class="tree blank"></button><a href="userinterface.html">User Interface</a></li>
+  <li><button class="tree blank"></button><a class="active" href="overview.html">Toolbar overview</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="commands/index.html">Toolbar commands</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/selection/index.html">Selection</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/selection/pick.html">Pick</a></li>
+      <li><button class="tree blank"></button><a href="commands/selection/measure.html">Measure</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/draw/index.html">Draw</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/draw/line.html">Line</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/lineparallel.html">Parallel line</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/lineperp.html">Perpendicular line</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/arc.html">Arc</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/arc2p.html">2-Point arc</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/arc3p.html">3-Point arc</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/arctangent.html">Tangent-Point arc</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/point.html">Point</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/drawshapes/index.html">Draw shapes</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/drawshapes/circle.html">Circle</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/circle2p.html">2-Point circle</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/circle3p.html">3-Point circle</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/rect.html">Rectangle</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/rectcenter.html">Center-Point rectangle</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/polyinscribe.html">Inscribed polygon</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/polycircumscribe.html">Circumscribed polygon</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/polyedge.html">Edge polygon</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/editedge/index.html">Edit edges</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/editedge/fillet.html">Fillet</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/chamfer.html">Chamfer</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/infillet.html">Inside fillet</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/cornerstep.html">Corner step</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/edgerecess.html">Edge recess</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/edgeu.html">Edge U-Cut</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/edgev.html">Edge V-Cut</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/keyslot.html">Key slot</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/modify/index.html">Modify</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/modify/move.html">Move</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/rotate.html">Rotate</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/scale.html">Scale</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/mirror.html">Mirror</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/rectarray.html">Rectangular array</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/polararray.html">Polar array</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/trim.html">Trim</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/extend.html">Extend</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/dimensions/index.html">Dimensions</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/dimensions/dim2p.html">Linear Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimbaseline.html">Baseline Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimcontinue.html">Continue Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimangle.html">Angle Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimangle3p.html">3-Point Angle Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimradius.html">Radius Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimdiameter.html">Diameter Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimcallout.html">Callout Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimsegment.html">Segment Dimension</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/cleanup/index.html">Cleanup</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/cleanup/join.html">Join</a></li>
+      <li><button class="tree blank"></button><a href="commands/cleanup/decurve.html">Decurve</a></li>
+      <li><button class="tree blank"></button><a href="commands/cleanup/removesmallsegs.html">Remove Small Segments</a></li>
+      <li><button class="tree blank"></button><a href="commands/cleanup/markopenplines.html">Mark Open Polylines</a></li>
+      <li><button class="tree blank"></button><a href="commands/cleanup/highlightoverlaps.html">Highlight Overlaps</a></li>
+      <li><button class="tree blank"></button><a href="commands/cleanup/marknontangent.html">Mark Non-Tangent Corners</a></li>
+      <li><button class="tree blank"></button><a href="commands/cleanup/marklargeradius.html">Mark Large Radius</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/setup/index.html">Setup</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/setup/layersetup.html">Layer Setup</a></li>
+      <li><button class="tree blank"></button><a href="commands/setup/shiftorigin.html">Shift Origin</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="demo.html">Demo Videos</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="experimental/index.html">Experimental features</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="experimental/extract/index.html">Extract Parts</a></li>
+    <li><button class="tree blank"></button><a href="experimental/outercontour/index.html">Create Outer Contour</a></li>
+    <li><button class="tree blank"></button><a href="experimental/followpath/index.html">Followpath</a></li>
+    <li><button class="tree blank"></button><a href="experimental/overlaydelete/index.html">Overlay deletion</a></li>
+    <li><button class="tree blank"></button><a href="experimental/layers/index.html">Layers</a></li>
+    <li><button class="tree blank"></button><a href="experimental/technology/index.html">Annotate Technology</a></li>
+    <li><button class="tree blank"></button><a href="experimental/perforate/index.html">Perforate</a></li>
+    <li><button class="tree blank"></button><a href="experimental/inch/index.html">Metric Inch</a></li>
+   </ul>
+  </li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="overview.html">Toolbar overview</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Toolbar overview</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock right">
+<div class="content">
+<img src="img/toolbar.png" alt="Pix toolbar">
+</div>
+</div>
+<div class="paragraph">
+<p>All drawing and editing commands live on the <strong>toolbar</strong> down the left edge of the
+Pix window. The toolbar is divided into groups of related tools, each separated by
+a thin divider line. This page lists every group and the commands it contains.</p>
+</div>
+<div class="paragraph">
+<p>Hover over any button to see its name, or click it to start the command. Commands
+shown in grey are not available in the current context.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Commands linked below have a detailed reference page. The remaining commands
+work the same way — select the tool, then follow the prompts shown in the input
+bar at the bottom of the window.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_selection">Selection</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Select entities and inspect the drawing.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="img/icons/pick.png" alt="Pick" width="16"></span> <a href="commands/selection/pick.html">Pick</a> — select entities to edit</p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/info.png" alt="Info" width="16"></span> <strong>Info</strong> — show information about the entity under the cursor</p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/measure.png" alt="Measure" width="16"></span> <a href="commands/selection/measure.html">Measure</a> — measure distance and angle between points</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_draw">Draw</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Create lines, arcs, and points.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="img/icons/line.png" alt="Line" width="16"></span> <a href="commands/draw/line.html">Line</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/lines.png" alt="Connected Lines" width="16"></span> <strong>Connected Lines</strong></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/lineparallel.png" alt="Parallel Line" width="16"></span> <a href="commands/draw/lineparallel.html">Parallel Line</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/lineperp.png" alt="Perpendicular Line" width="16"></span> <a href="commands/draw/lineperp.html">Perpendicular Line</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/arc.png" alt="Arc" width="16"></span> <a href="commands/draw/arc.html">Arc</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/arc2p.png" alt="2-Point Arc" width="16"></span> <a href="commands/draw/arc2p.html">2-Point Arc</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/arc3p.png" alt="3-Point Arc" width="16"></span> <a href="commands/draw/arc3p.html">3-Point Arc</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/arctangent.png" alt="Tangent Arc" width="16"></span> <a href="commands/draw/arctangent.html">Tangent Arc</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/point.png" alt="Point" width="16"></span> <a href="commands/draw/point.html">Point</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_draw_shapes">Draw Shapes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Create circles, rectangles, and polygons.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="img/icons/circle.png" alt="Circle" width="16"></span> <a href="commands/drawshapes/circle.html">Circle</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/circle2p.png" alt="2-Point Circle" width="16"></span> <a href="commands/drawshapes/circle2p.html">2-Point Circle</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/circle3p.png" alt="3-Point Circle" width="16"></span> <a href="commands/drawshapes/circle3p.html">3-Point Circle</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/rect.png" alt="Rectangle" width="16"></span> <a href="commands/drawshapes/rect.html">Rectangle</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/rectcenter.png" alt="Center-Point Rectangle" width="16"></span> <a href="commands/drawshapes/rectcenter.html">Center-Point Rectangle</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/polyinscribe.png" alt="Inscribed Polygon" width="16"></span> <a href="commands/drawshapes/polyinscribe.html">Inscribed Polygon</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/polycircumscribe.png" alt="Circumscribed Polygon" width="16"></span> <a href="commands/drawshapes/polycircumscribe.html">Circumscribed Polygon</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/polyedge.png" alt="Edge Polygon" width="16"></span> <a href="commands/drawshapes/polyedge.html">Edge Polygon</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_edit_edges">Edit Edges</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Apply corner and edge treatments for sheet-metal work.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="img/icons/fillet.png" alt="Fillet" width="16"></span> <a href="commands/editedge/fillet.html">Fillet</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/chamfer.png" alt="Chamfer" width="16"></span> <a href="commands/editedge/chamfer.html">Chamfer</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/infillet.png" alt="Inside Fillet" width="16"></span> <a href="commands/editedge/infillet.html">Inside Fillet</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/cornerstep.png" alt="Corner Step" width="16"></span> <a href="commands/editedge/cornerstep.html">Corner Step</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/edgerecess.png" alt="Edge Recess" width="16"></span> <a href="commands/editedge/edgerecess.html">Edge Recess</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/edgeu.png" alt="Edge U-Cut" width="16"></span> <a href="commands/editedge/edgeu.html">Edge U-Cut</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/edgev.png" alt="Edge V-Cut" width="16"></span> <a href="commands/editedge/edgev.html">Edge V-Cut</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/keyslot.png" alt="Key Slot" width="16"></span> <a href="commands/editedge/keyslot.html">Key Slot</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_trim_divide">Trim &amp; Divide</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Shorten, lengthen, or split entities.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="img/icons/trim.png" alt="Trim" width="16"></span> <a href="commands/modify/trim.html">Trim</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/extend.png" alt="Extend" width="16"></span> <a href="commands/modify/extend.html">Extend</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/divide.png" alt="Divide" width="16"></span> <strong>Divide</strong> — split a segment into equal pieces</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_construction_lines">Construction Lines</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Create temporary reference geometry to snap to. Construction lines are guides and
+are not part of the finished drawing.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="img/icons/consline.png" alt="Construction Line" width="16"></span> <strong>Construction Line</strong></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/consparallel.png" alt="Parallel Construction Line" width="16"></span> <strong>Parallel Construction Line</strong></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/conscircle.png" alt="Construction Circle" width="16"></span> <strong>Construction Circle</strong></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/consdel.png" alt="Delete Construction Lines" width="16"></span> <strong>Delete Construction Lines</strong></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modify">Modify</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Transform or duplicate the current selection.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="img/icons/move.png" alt="Move" width="16"></span> <a href="commands/modify/move.html">Move</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/rotate.png" alt="Rotate" width="16"></span> <a href="commands/modify/rotate.html">Rotate</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/scale.png" alt="Scale" width="16"></span> <a href="commands/modify/scale.html">Scale</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/mirror.png" alt="Mirror" width="16"></span> <a href="commands/modify/mirror.html">Mirror</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/rectarray.png" alt="Rectangular Array" width="16"></span> <a href="commands/modify/rectarray.html">Rectangular Array</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/polararray.png" alt="Polar Array" width="16"></span> <a href="commands/modify/polararray.html">Polar Array</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dimensions">Dimensions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Annotate the drawing with measurements and callouts.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="img/icons/dim2p.png" alt="Linear Dimension" width="16"></span> <a href="commands/dimensions/dim2p.html">Linear Dimension</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/dimbaseline.png" alt="Baseline Dimension" width="16"></span> <a href="commands/dimensions/dimbaseline.html">Baseline Dimension</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/dimcontinue.png" alt="Continue Dimension" width="16"></span> <a href="commands/dimensions/dimcontinue.html">Continue Dimension</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/dimangle.png" alt="Angle Dimension" width="16"></span> <a href="commands/dimensions/dimangle.html">Angle Dimension</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/dimangle3p.png" alt="3-Point Angle Dimension" width="16"></span> <a href="commands/dimensions/dimangle3p.html">3-Point Angle Dimension</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/dimradius.png" alt="Radius Dimension" width="16"></span> <a href="commands/dimensions/dimradius.html">Radius Dimension</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/dimdiameter.png" alt="Diameter Dimension" width="16"></span> <a href="commands/dimensions/dimdiameter.html">Diameter Dimension</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/dimcallout.png" alt="Callout Dimension" width="16"></span> <a href="commands/dimensions/dimcallout.html">Callout Dimension</a></p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/dimsegment.png" alt="Segment Dimension" width="16"></span> <a href="commands/dimensions/dimsegment.html">Segment Dimension</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bend">Bend</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Add and edit sheet-metal bend lines.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="img/icons/editbend.png" alt="Bend" width="16"></span> <strong>Bend</strong> — click a line to add a bend, or a bend to edit it</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cleanup">Cleanup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tidy up imported geometry and flag issues before manufacturing.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="img/icons/join.png" alt="Join" width="16"></span> <a href="commands/cleanup/join.html">Join</a> — join segments into a single polyline</p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/decurve.png" alt="Decurve" width="16"></span> <a href="commands/cleanup/decurve.html">Decurve</a> — replace a spline with line segments</p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/removesmallsegs.png" alt="Remove Small Segments" width="16"></span> <a href="commands/cleanup/removesmallsegs.html">Remove Small Segments</a> — delete tiny segments in a selected area</p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/markopenplines.png" alt="Mark Open Polylines" width="16"></span> <a href="commands/cleanup/markopenplines.html">Mark Open Polylines</a> — highlight contours that are not closed</p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/highlightoverlaps.png" alt="Highlight Overlaps" width="16"></span> <a href="commands/cleanup/highlightoverlaps.html">Highlight Overlaps</a> — find and optionally remove overlapping segments</p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/marknontangent.png" alt="Mark Non-Tangent Corners" width="16"></span> <a href="commands/cleanup/marknontangent.html">Mark Non-Tangent Corners</a> — flag corners with a slight kink</p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/marklargeradius.png" alt="Mark Large Radius" width="16"></span> <a href="commands/cleanup/marklargeradius.html">Mark Large Radius</a> — flag arcs above a radius threshold</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setup">Setup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Configure the drawing environment.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="img/icons/layersetup.png" alt="Layer Setup" width="16"></span> <a href="commands/setup/layersetup.html">Layer Setup</a> — create and manage layers</p>
+</li>
+<li>
+<p><span class="image"><img src="img/icons/shiftorigin.png" alt="Shift Origin" width="16"></span> <a href="commands/setup/shiftorigin.html">Shift Origin</a> — move the drawing origin</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_selection">Selection</a>
+  </li>
+  <li level="1">
+   <a href="#_draw">Draw</a>
+  </li>
+  <li level="1">
+   <a href="#_draw_shapes">Draw Shapes</a>
+  </li>
+  <li level="1">
+   <a href="#_edit_edges">Edit Edges</a>
+  </li>
+  <li level="1">
+   <a href="#_trim_divide">Trim &amp; Divide</a>
+  </li>
+  <li level="1">
+   <a href="#_construction_lines">Construction Lines</a>
+  </li>
+  <li level="1">
+   <a href="#_modify">Modify</a>
+  </li>
+  <li level="1">
+   <a href="#_dimensions">Dimensions</a>
+  </li>
+  <li level="1">
+   <a href="#_bend">Bend</a>
+  </li>
+  <li level="1">
+   <a href="#_cleanup">Cleanup</a>
+  </li>
+  <li level="1">
+   <a href="#_setup">Setup</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="userinterface.html">User Interface</a></span>
+ <span class="next"><a href="commands/index.html">Toolbar commands</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 TRUMPF Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="res/index.js"></script>
+    <script src="res/files.js"></script>
+    <script src="res/site.js"></script>
+
+    
+</body>
+</html>

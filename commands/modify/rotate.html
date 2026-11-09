@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Rotate</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/white-logo.png" width="103" height="34" /></div>
+        <div><p>Pix User Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Welcome to Pix</a></li>
+  <li><button class="tree blank"></button><a href="../../installation.html">Installation</a></li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">User Interface</a></li>
+  <li><button class="tree blank"></button><a href="../../overview.html">Toolbar overview</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Toolbar commands</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../selection/index.html">Selection</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../selection/pick.html">Pick</a></li>
+      <li><button class="tree blank"></button><a href="../selection/measure.html">Measure</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../draw/index.html">Draw</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../draw/line.html">Line</a></li>
+      <li><button class="tree blank"></button><a href="../draw/lineparallel.html">Parallel line</a></li>
+      <li><button class="tree blank"></button><a href="../draw/lineperp.html">Perpendicular line</a></li>
+      <li><button class="tree blank"></button><a href="../draw/arc.html">Arc</a></li>
+      <li><button class="tree blank"></button><a href="../draw/arc2p.html">2-Point arc</a></li>
+      <li><button class="tree blank"></button><a href="../draw/arc3p.html">3-Point arc</a></li>
+      <li><button class="tree blank"></button><a href="../draw/arctangent.html">Tangent-Point arc</a></li>
+      <li><button class="tree blank"></button><a href="../draw/point.html">Point</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../drawshapes/index.html">Draw shapes</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../drawshapes/circle.html">Circle</a></li>
+      <li><button class="tree blank"></button><a href="../drawshapes/circle2p.html">2-Point circle</a></li>
+      <li><button class="tree blank"></button><a href="../drawshapes/circle3p.html">3-Point circle</a></li>
+      <li><button class="tree blank"></button><a href="../drawshapes/rect.html">Rectangle</a></li>
+      <li><button class="tree blank"></button><a href="../drawshapes/rectcenter.html">Center-Point rectangle</a></li>
+      <li><button class="tree blank"></button><a href="../drawshapes/polyinscribe.html">Inscribed polygon</a></li>
+      <li><button class="tree blank"></button><a href="../drawshapes/polycircumscribe.html">Circumscribed polygon</a></li>
+      <li><button class="tree blank"></button><a href="../drawshapes/polyedge.html">Edge polygon</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../editedge/index.html">Edit edges</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../editedge/fillet.html">Fillet</a></li>
+      <li><button class="tree blank"></button><a href="../editedge/chamfer.html">Chamfer</a></li>
+      <li><button class="tree blank"></button><a href="../editedge/infillet.html">Inside fillet</a></li>
+      <li><button class="tree blank"></button><a href="../editedge/cornerstep.html">Corner step</a></li>
+      <li><button class="tree blank"></button><a href="../editedge/edgerecess.html">Edge recess</a></li>
+      <li><button class="tree blank"></button><a href="../editedge/edgeu.html">Edge U-Cut</a></li>
+      <li><button class="tree blank"></button><a href="../editedge/edgev.html">Edge V-Cut</a></li>
+      <li><button class="tree blank"></button><a href="../editedge/keyslot.html">Key slot</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Modify</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="move.html">Move</a></li>
+      <li><button class="tree blank"></button><a class="active" href="rotate.html">Rotate</a></li>
+      <li><button class="tree blank"></button><a href="scale.html">Scale</a></li>
+      <li><button class="tree blank"></button><a href="mirror.html">Mirror</a></li>
+      <li><button class="tree blank"></button><a href="rectarray.html">Rectangular array</a></li>
+      <li><button class="tree blank"></button><a href="polararray.html">Polar array</a></li>
+      <li><button class="tree blank"></button><a href="trim.html">Trim</a></li>
+      <li><button class="tree blank"></button><a href="extend.html">Extend</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../dimensions/index.html">Dimensions</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../dimensions/dim2p.html">Linear Dimension</a></li>
+      <li><button class="tree blank"></button><a href="../dimensions/dimbaseline.html">Baseline Dimension</a></li>
+      <li><button class="tree blank"></button><a href="../dimensions/dimcontinue.html">Continue Dimension</a></li>
+      <li><button class="tree blank"></button><a href="../dimensions/dimangle.html">Angle Dimension</a></li>
+      <li><button class="tree blank"></button><a href="../dimensions/dimangle3p.html">3-Point Angle Dimension</a></li>
+      <li><button class="tree blank"></button><a href="../dimensions/dimradius.html">Radius Dimension</a></li>
+      <li><button class="tree blank"></button><a href="../dimensions/dimdiameter.html">Diameter Dimension</a></li>
+      <li><button class="tree blank"></button><a href="../dimensions/dimcallout.html">Callout Dimension</a></li>
+      <li><button class="tree blank"></button><a href="../dimensions/dimsegment.html">Segment Dimension</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cleanup/index.html">Cleanup</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../cleanup/join.html">Join</a></li>
+      <li><button class="tree blank"></button><a href="../cleanup/decurve.html">Decurve</a></li>
+      <li><button class="tree blank"></button><a href="../cleanup/removesmallsegs.html">Remove Small Segments</a></li>
+      <li><button class="tree blank"></button><a href="../cleanup/markopenplines.html">Mark Open Polylines</a></li>
+      <li><button class="tree blank"></button><a href="../cleanup/highlightoverlaps.html">Highlight Overlaps</a></li>
+      <li><button class="tree blank"></button><a href="../cleanup/marknontangent.html">Mark Non-Tangent Corners</a></li>
+      <li><button class="tree blank"></button><a href="../cleanup/marklargeradius.html">Mark Large Radius</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../setup/index.html">Setup</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../setup/layersetup.html">Layer Setup</a></li>
+      <li><button class="tree blank"></button><a href="../setup/shiftorigin.html">Shift Origin</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../demo.html">Demo Videos</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../experimental/index.html">Experimental features</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../experimental/extract/index.html">Extract Parts</a></li>
+    <li><button class="tree blank"></button><a href="../../experimental/outercontour/index.html">Create Outer Contour</a></li>
+    <li><button class="tree blank"></button><a href="../../experimental/followpath/index.html">Followpath</a></li>
+    <li><button class="tree blank"></button><a href="../../experimental/overlaydelete/index.html">Overlay deletion</a></li>
+    <li><button class="tree blank"></button><a href="../../experimental/layers/index.html">Layers</a></li>
+    <li><button class="tree blank"></button><a href="../../experimental/technology/index.html">Annotate Technology</a></li>
+    <li><button class="tree blank"></button><a href="../../experimental/perforate/index.html">Perforate</a></li>
+    <li><button class="tree blank"></button><a href="../../experimental/inch/index.html">Metric Inch</a></li>
+   </ul>
+  </li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Toolbar commands</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Modify</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="rotate.html">Rotate</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Rotate</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Rotate</strong> <span class="image"><img src="img/rotate.png" alt="Rotate" width="16"></span> tool is used to rotate selected
+drawing entities around a specified center point by a specified angle.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_the_mouse">Using the mouse</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>First select the drawing entities to rotate by using the
+<a href="../selection/pick.html"><strong>Pick</strong></a> tool.</p>
+</div>
+<div class="paragraph">
+<p>Select the <strong>Rotate</strong> tool, pick a center point of rotation and then
+pick the start point and end point to define the rotation angle.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/rotate1.png" alt="Rotate using mouse" width="513">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_the_keyboard">Using the keyboard</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>After selecting the drawing entities you want to rotate, select the <strong>Rotate</strong>
+tool.</p>
+</div>
+<div class="paragraph">
+<p>Type in the <strong>center point</strong> coordinates and <strong>Angle</strong> using the keyboard, and press
+<kbd>Enter</kbd>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/rotate2.png" alt="Rotate using keyboard" width="444">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Positive angles rotate the entities counter-clockwise, while negative
+angles rotate them clockwise. The Angle input box defines the angle relative to
+the center point of rotation, based on the entity&#8217;s initial position.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_using_the_mouse">Using the mouse</a>
+  </li>
+  <li level="1">
+   <a href="#_using_the_keyboard">Using the keyboard</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="move.html">Move</a></span>
+ <span class="next"><a href="scale.html">Scale</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 TRUMPF Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

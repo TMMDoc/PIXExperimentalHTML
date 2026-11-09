@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="res/bento.css">
+  <link rel="stylesheet" href="res/site.css">
+  <link rel="stylesheet" href="res/tree.css">
+  <link rel="stylesheet" href="res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Welcome to Pix</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="img/white-logo.png" width="103" height="34" /></div>
+        <div><p>Pix User Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a class="active" href="index.html">Welcome to Pix</a></li>
+  <li><button class="tree blank"></button><a href="installation.html">Installation</a></li>
+  <li><button class="tree blank"></button><a href="userinterface.html">User Interface</a></li>
+  <li><button class="tree blank"></button><a href="overview.html">Toolbar overview</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="commands/index.html">Toolbar commands</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/selection/index.html">Selection</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/selection/pick.html">Pick</a></li>
+      <li><button class="tree blank"></button><a href="commands/selection/measure.html">Measure</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/draw/index.html">Draw</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/draw/line.html">Line</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/lineparallel.html">Parallel line</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/lineperp.html">Perpendicular line</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/arc.html">Arc</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/arc2p.html">2-Point arc</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/arc3p.html">3-Point arc</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/arctangent.html">Tangent-Point arc</a></li>
+      <li><button class="tree blank"></button><a href="commands/draw/point.html">Point</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/drawshapes/index.html">Draw shapes</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/drawshapes/circle.html">Circle</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/circle2p.html">2-Point circle</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/circle3p.html">3-Point circle</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/rect.html">Rectangle</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/rectcenter.html">Center-Point rectangle</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/polyinscribe.html">Inscribed polygon</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/polycircumscribe.html">Circumscribed polygon</a></li>
+      <li><button class="tree blank"></button><a href="commands/drawshapes/polyedge.html">Edge polygon</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/editedge/index.html">Edit edges</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/editedge/fillet.html">Fillet</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/chamfer.html">Chamfer</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/infillet.html">Inside fillet</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/cornerstep.html">Corner step</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/edgerecess.html">Edge recess</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/edgeu.html">Edge U-Cut</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/edgev.html">Edge V-Cut</a></li>
+      <li><button class="tree blank"></button><a href="commands/editedge/keyslot.html">Key slot</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/modify/index.html">Modify</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/modify/move.html">Move</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/rotate.html">Rotate</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/scale.html">Scale</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/mirror.html">Mirror</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/rectarray.html">Rectangular array</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/polararray.html">Polar array</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/trim.html">Trim</a></li>
+      <li><button class="tree blank"></button><a href="commands/modify/extend.html">Extend</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/dimensions/index.html">Dimensions</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/dimensions/dim2p.html">Linear Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimbaseline.html">Baseline Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimcontinue.html">Continue Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimangle.html">Angle Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimangle3p.html">3-Point Angle Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimradius.html">Radius Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimdiameter.html">Diameter Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimcallout.html">Callout Dimension</a></li>
+      <li><button class="tree blank"></button><a href="commands/dimensions/dimsegment.html">Segment Dimension</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/cleanup/index.html">Cleanup</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/cleanup/join.html">Join</a></li>
+      <li><button class="tree blank"></button><a href="commands/cleanup/decurve.html">Decurve</a></li>
+      <li><button class="tree blank"></button><a href="commands/cleanup/removesmallsegs.html">Remove Small Segments</a></li>
+      <li><button class="tree blank"></button><a href="commands/cleanup/markopenplines.html">Mark Open Polylines</a></li>
+      <li><button class="tree blank"></button><a href="commands/cleanup/highlightoverlaps.html">Highlight Overlaps</a></li>
+      <li><button class="tree blank"></button><a href="commands/cleanup/marknontangent.html">Mark Non-Tangent Corners</a></li>
+      <li><button class="tree blank"></button><a href="commands/cleanup/marklargeradius.html">Mark Large Radius</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="commands/setup/index.html">Setup</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="commands/setup/layersetup.html">Layer Setup</a></li>
+      <li><button class="tree blank"></button><a href="commands/setup/shiftorigin.html">Shift Origin</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="demo.html">Demo Videos</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="experimental/index.html">Experimental features</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="experimental/extract/index.html">Extract Parts</a></li>
+    <li><button class="tree blank"></button><a href="experimental/outercontour/index.html">Create Outer Contour</a></li>
+    <li><button class="tree blank"></button><a href="experimental/followpath/index.html">Followpath</a></li>
+    <li><button class="tree blank"></button><a href="experimental/overlaydelete/index.html">Overlay deletion</a></li>
+    <li><button class="tree blank"></button><a href="experimental/layers/index.html">Layers</a></li>
+    <li><button class="tree blank"></button><a href="experimental/technology/index.html">Annotate Technology</a></li>
+    <li><button class="tree blank"></button><a href="experimental/perforate/index.html">Perforate</a></li>
+    <li><button class="tree blank"></button><a href="experimental/inch/index.html">Metric Inch</a></li>
+   </ul>
+  </li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Welcome to Pix</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Welcome to Pix</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock right">
+<div class="content">
+<img src="img/logo.png" alt="Logo" width="150">
+</div>
+</div>
+<div class="paragraph">
+<p>Pix is a powerful yet intuitive 2D drawing editor specifically engineered
+for precision drafting and sheet metal design. Combining the accuracy required
+for professional engineering work with an approachable user interface, Pix
+empowers designers, engineers, and fabricators to create detailed technical
+drawings efficiently.</p>
+</div>
+<div class="paragraph">
+<p><a href="img/pixintroexplanation.mp4">Introduction video</a></p>
+</div>
+<div class="paragraph">
+<p>Pix application that specializes in:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Precision 2D Drafting</strong>: Create accurate technical drawings with exact dimensions and geometric relationships</p>
+</li>
+<li>
+<p><strong>Sheet Metal Design</strong>: Purpose-built tools for designing parts that will be cut, bent, and formed from sheet metal</p>
+</li>
+<li>
+<p><strong>3D Modeling</strong>: Visualize your designs in three dimensions for better understanding and presentation</p>
+</li>
+<li>
+<p><strong>Lightweight Performance</strong>: Fast and responsive, designed to run efficiently without requiring high-end hardware</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_key_features">Key Features</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_core_drawing_tools">Core Drawing Tools</h3>
+<div class="paragraph">
+<p>Pix provides a comprehensive set of drawing commands that cover all essential geometric shapes and operations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Basic Geometry</strong>: Lines, circles, arcs, rectangles, and points with precise coordinate input</p>
+</li>
+<li>
+<p><strong>Advanced Shapes</strong>: Polygons (inscribed and circumscribed), polar arrays, and rectangular arrays</p>
+</li>
+<li>
+<p><strong>Modification Tools</strong>: Fillet, chamfer, mirror, rotate, scale, and move operations</p>
+</li>
+<li>
+<p><strong>Specialized Features</strong>: Corner steps, edge recesses, U-edges, V-notches, and key slots for sheet metal work</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_precision_and_control">Precision and Control</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Coordinate System</strong>: Work with absolute coordinates, relative positioning, and polar coordinates</p>
+</li>
+<li>
+<p><strong>Snap and Grid</strong>: Intelligent snapping to grid points, object endpoints, midpoints, and intersections</p>
+</li>
+<li>
+<p><strong>Dimensional Accuracy</strong>: Enter exact measurements and angles for professional-grade precision</p>
+</li>
+<li>
+<p><strong>Constraint-Based Design</strong>: Create relationships between geometric elements that maintain design intent</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sheet_metal_specialization">Sheet Metal Specialization</h3>
+<div class="paragraph">
+<p>Pix includes specialized tools designed specifically for sheet metal fabrication:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Corner Operations</strong>: Automated corner steps and edge treatments</p>
+</li>
+<li>
+<p><strong>Notching Tools</strong>: V-notches and edge recesses for proper material flow</p>
+</li>
+<li>
+<p><strong>Key Slots</strong>: Precision slots for mechanical connections</p>
+</li>
+<li>
+<p><strong>Bend Allowances</strong>: Built-in understanding of material properties and bending requirements</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_getting_started">Getting Started</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This documentation will guide you through everything you need to know about Pix:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Installation</strong>: Set up Pix on your system and configure initial settings</p>
+</li>
+<li>
+<p><strong>User Interface</strong>: Understand the workspace, toolbars, and navigation</p>
+</li>
+<li>
+<p><strong>Commands Reference</strong>: Detailed explanations of every drawing and editing tool</p>
+</li>
+<li>
+<p><strong>Workflows</strong>: Step-by-step examples for common design tasks</p>
+</li>
+<li>
+<p><strong>Best Practices</strong>: Tips for efficient and accurate design work</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Whether you&#8217;re creating simple 2D sketches or complex 3D sheet metal assemblies, Pix provides the tools and precision you need to bring your ideas to reality. The combination of professional capabilities with an accessible interface makes Pix suitable for both newcomers to CAD and experienced designers looking for a focused, efficient drawing tool.</p>
+</div>
+<div class="paragraph">
+<p>Ready to start designing? Let&#8217;s explore the Pix interface and discover how its powerful yet straightforward tools can enhance your design workflow.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_key_features">Key Features</a>
+  </li>
+  <li level="2">
+   <a href="#_core_drawing_tools">Core Drawing Tools</a>
+  </li>
+  <li level="2">
+   <a href="#_precision_and_control">Precision and Control</a>
+  </li>
+  <li level="2">
+   <a href="#_sheet_metal_specialization">Sheet Metal Specialization</a>
+  </li>
+  <li level="1">
+   <a href="#_getting_started">Getting Started</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="next"><a href="installation.html">Installation</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 TRUMPF Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled 2026.11.09 by Bento 56</p>
+            <img src="res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="res/index.js"></script>
+    <script src="res/files.js"></script>
+    <script src="res/site.js"></script>
+
+    
+</body>
+</html>
