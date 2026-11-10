@@ -24,8 +24,6 @@
  <ul>
   <li><button class="tree blank"></button><a href="../../index.html">Welcome to Pix</a></li>
   <li><button class="tree blank"></button><a href="../../installation.html">Installation</a></li>
-  <li><button class="tree blank"></button><a href="../../userinterface.html">User Interface</a></li>
-  <li><button class="tree blank"></button><a href="../../overview.html">Toolbar overview</a></li>
   <li>
    <button class="tree closed"></button>
    <a href="../../commands/index.html">Toolbar commands</a>
@@ -145,6 +143,7 @@
     <li><button class="tree blank"></button><a href="../technology/index.html">Annotate Technology</a></li>
     <li><button class="tree blank"></button><a href="../perforate/index.html">Perforate</a></li>
     <li><button class="tree blank"></button><a href="../inch/index.html">Metric Inch</a></li>
+    <li><button class="tree blank"></button><a href="../ducts/index.html">Parametric Ducts</a></li>
    </ul>
   </li>
  </ul>
@@ -172,33 +171,73 @@
                     <article id="article">
                         <h1>Extract Parts</h1>
 <div class="paragraph">
-<p>Base data
-"C:\Work\PixExperimental\MVP\MVP1_ExtractParts\Panel Development - Quote.dxf"</p>
+<p>Customers rarely receive a clean, single-part file. What lands on the desk is a
+<strong>dirty construction drawing</strong>: a quote, offer or assembly DXF with <strong>many parts nested
+on one sheet</strong>, tangled up with dimensions, part texts, title blocks and construction
+lines - and with the same edges often drawn two or three times. Before any of those
+parts can go to production it has to be lifted out of that clutter and rebuilt as one
+clean, closed, single-part contour.</p>
 </div>
 <div class="paragraph">
-<p>Steps
-- select the Parts
-- save selected
-- dissolve Polylines who are part of inner and outer contours
-- merge outer lines to a closed Polyline
-- convert bend lines (idea for future: autoselect several bend lines by layer or color)
-- select texts and delete text</p>
+<p><strong>Extract Parts</strong> is the workflow that does exactly that. You isolate the one part you
+want, save it to its own file, and then let the <strong>Select</strong> and <strong>Autocleanup</strong> tools turn
+the leftover tangle of loose lines, arcs and spline fragments into a production-ready
+part: inner and outer contours separated, the outer boundary welded into one closed
+polyline, bend lines converted so they fold instead of cut, and the stray texts
+stripped out.</p>
+</div>
+<div class="paragraph">
+<p>Steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Select the part</strong> - marquee or pick the entities that make up the single part you
+want to keep.</p>
+</li>
+<li>
+<p><span class="menuseq"><b class="menu">File</b>&#160;<b class="caret">&#8250;</b> <b class="menuitem">Save Selected As&#8230;&#8203;</b></span> - write just that selection to its own file and
+carry on working in it, leaving the busy source drawing untouched.</p>
+</li>
+<li>
+<p><strong>Explode Polyline</strong> (Polygon group) - dissolve the polylines that chain inner and
+outer contours together, so each contour stands on its own again. Pair it with
+<strong>Select Polylines</strong> (Select group) to explode the whole drawing in one step.</p>
+</li>
+<li>
+<p><strong>Create Outer Contour</strong> (Autocleanup group) - merge the outer boundary into a single
+closed polyline; for a specific inner contour, click inside it with <strong>Follow Path</strong>.</p>
+</li>
+<li>
+<p><strong>Convert the bend lines</strong> with the <strong>Bend</strong> tool - click a line to turn it into a real
+bend line so the part folds there instead of being cut. (Future: auto-select the
+bend lines by layer or colour.)</p>
+</li>
+<li>
+<p><strong>Select Text</strong> (Select group) and delete - strip the part numbers and annotations.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Example data: <code>MVP\MVP1_ExtractParts\Panel Development - Quote.dxf</code></p>
 </div>
 <div class="paragraph">
 <p>Details:
 "C:\Work\PixExperimental\MD\selectPolylines.md"
 "C:\Work\PixExperimental\MD\explodePolyline.md"
-"C:\Work\PixExperimental\MD\selectText.md"
-"C:\Work\PixExperimental\MD\selectOuterContour.md"</p>
+"C:\Work\PixExperimental\MD\selectOuterContour.md"
+"C:\Work\PixExperimental\MD\selectText.md"</p>
 </div>
 <div class="paragraph">
 <p>Videos:</p>
 </div>
 <div class="paragraph">
-<p><a href="./img/extract_current.mp4">Current</a></p>
+<p><a href="./img/extract_current2.mp4">Current workflow</a>  vs  <a href="./img/extractparts_pix.mp4">in PIX</a></p>
 </div>
-<div class="paragraph">
-<p><a href="./img/extractparts_pix.mp4">PIX</a></p>
+<div class="imageblock">
+<div class="content">
+<img src="img/screen.png" alt="screen">
+</div>
 </div>
 
                     </article>

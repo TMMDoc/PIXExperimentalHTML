@@ -24,8 +24,6 @@
  <ul>
   <li><button class="tree blank"></button><a href="../../index.html">Welcome to Pix</a></li>
   <li><button class="tree blank"></button><a href="../../installation.html">Installation</a></li>
-  <li><button class="tree blank"></button><a href="../../userinterface.html">User Interface</a></li>
-  <li><button class="tree blank"></button><a href="../../overview.html">Toolbar overview</a></li>
   <li>
    <button class="tree closed"></button>
    <a href="../../commands/index.html">Toolbar commands</a>
@@ -145,6 +143,7 @@
     <li><button class="tree blank"></button><a href="../technology/index.html">Annotate Technology</a></li>
     <li><button class="tree blank"></button><a href="../perforate/index.html">Perforate</a></li>
     <li><button class="tree blank"></button><a href="../inch/index.html">Metric Inch</a></li>
+    <li><button class="tree blank"></button><a href="../ducts/index.html">Parametric Ducts</a></li>
    </ul>
   </li>
  </ul>
@@ -171,17 +170,179 @@
                 <div id="site-toc-left">
                     <article id="article">
                         <h1>Layers</h1>
-<div class="sect1">
-<h2 id="_drawing_with_many_layers">Drawing with many layers</h2>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Drawing: Base Plate 215-25-2.dxf</p>
+<p>Customer drawings often arrive spread across <strong>many layers</strong> - outlines, bends,
+dimensions, centre-mark crosshairs, text and construction geometry all mixed
+together. The <strong>Layers</strong> panel lets you see that structure at a glance and tame it:
+hide what you don&#8217;t need, lock what you must not touch, make the right layer current
+and move entities onto it - all while you keep drawing and watch the viewport update
+live.</p>
 </div>
 <div class="paragraph">
-<p>Steps:
-- Identify layers by click on element
-- Toggle and lock layers
-- Autodelete dimensions and crosshairs</p>
+<p>Drawing: <code>Base Plate 215-25-2.dxf</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_opening_the_panel">Opening the panel</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Layers</strong> panel docks on the right edge of the window. Open or close it with:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="menuseq"><b class="menu">View</b>&#160;<b class="caret">&#8250;</b> <b class="menuitem">Layers</b></span> (checkable, <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>L</kbd></span>) - the menu check mark follows the panel&#8217;s state.</p>
+</li>
+<li>
+<p>the <strong>Layer Setup</strong> toolbar button - it now opens the same panel (the old modal dialog is gone).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Because it is a dockable panel and not a modal dialog, you can leave it open while you
+edit and see freeze and lock changes take effect immediately.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_layer_rows">The layer rows</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Each layer is one row, and every element on the row is clickable and acts on that
+layer. The <strong>current</strong> layer (the one new geometry is drawn on) is shown in <strong>bold</strong>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Eye</strong> (visibility) - toggles <strong>Freeze / Thaw</strong>. An open eye means the layer is visible;
+a greyed, slashed eye means it is frozen. The current layer cannot be frozen.</p>
+</li>
+<li>
+<p><strong>Padlock</strong> (lock) - toggles <strong>Lock / Unlock</strong>. A closed padlock means locked, an open one unlocked.</p>
+</li>
+<li>
+<p><strong>Colour</strong> swatch - opens the edit dialog to change the layer&#8217;s <strong>name and colour</strong>.</p>
+</li>
+<li>
+<p><strong>Name</strong> - makes that layer the <strong>current</strong> layer. A frozen layer must be thawed first.</p>
+</li>
+<li>
+<p><strong>Right-click</strong> a row - opens a layer menu: <strong>Move selection here</strong>, <strong>Select entities on
+this layer</strong> and <strong>Move this layer&#8217;s entities to "0"</strong>, all targeting the row you clicked.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_freeze_vs_lock_two_different_ideas">Freeze vs. Lock - two different ideas</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Freeze / Thaw</strong> <strong>hides</strong> the layer from the viewport (outlines and fills) and makes its
+entities <strong>non-selectable</strong>, so clicks and rubber-band drags fall through to the geometry
+underneath. Use it to get noisy layers out of the way.</p>
+</li>
+<li>
+<p><strong>Lock / Unlock</strong> keeps the layer <strong>drawn normally</strong> but <strong>excludes its entities from every
+selection</strong> - single click, rubber-band, Select All, Invert, Select Text and Select
+Polylines - so they cannot be moved, deleted or edited by accident. Use it to protect a
+layer you want to keep seeing but not change.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_header_controls_act_on_all_layers_at_once">Header controls - act on all layers at once</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Visibility</strong> and <strong>Lock</strong> column headers are themselves clickable master icons:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Header eye</strong> - shows or <strong>hides all unlocked layers</strong> at once (it never freezes the current layer).</p>
+</li>
+<li>
+<p><strong>Header padlock</strong> - <strong>inverts every layer&#8217;s lock</strong> (locked layers unlock, unlocked layers lock).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_button_strip">The button strip</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Above the list, a small strip holds the actions that are not per-row:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>New</strong> - add a new layer (name + colour), created with a continuous line style.</p>
+</li>
+<li>
+<p><strong>Delete</strong> - remove the selected layer. Layer "0" and layers that still contain entities
+are protected; deleting the current layer first moves "current" to layer "0".</p>
+</li>
+<li>
+<p><strong>Purge</strong> - remove every unused (empty) layer in one step.</p>
+</li>
+<li>
+<p><strong>More</strong> - opens the same menu as a right-click on the selected row. Right-clicking the
+target layer is usually the clearer path.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_click_an_element_to_find_its_layer">Click an element to find its layer</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In <strong>Pick</strong> mode, single-clicking an entity in the drawing <strong>highlights that entity&#8217;s layer
+row</strong> in the panel - so the panel always reflects what you just clicked. This is the fast
+way to answer "which layer is this on?" on an unfamiliar drawing.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_good_to_know">Good to know</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Freeze and lock are view state</strong>, like the current selection: they are <strong>not</strong> written to
+the saved file and are <strong>not</strong> on the undo stack - they are for working comfortably, not
+for changing the part.</p>
+</li>
+<li>
+<p><strong>Structural changes do undo</strong>: New, Delete, Purge, making a layer current, colour / name
+changes and the move-entities actions all undo and redo like any other edit.</p>
+</li>
+<li>
+<p><strong>Layer "0"</strong> cannot be renamed or deleted.</p>
+</li>
+<li>
+<p>Renaming or recolouring a layer <strong>keeps</strong> its frozen and locked state.</p>
+</li>
+<li>
+<p>Opening a new drawing automatically rebinds the panel to it.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cleaning_up_a_layered_drawing">Cleaning up a layered drawing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With the layers under control, the usual tidy-up on imported data is quick: freeze the
+layers you do not care about, then auto-remove the dimensions and the centre-mark
+crosshairs and strip the stray text - see the detail notes below.</p>
 </div>
 <div class="paragraph">
 <p>Details:
@@ -194,6 +355,11 @@
 <p>Demovideo
 <a href="./img/layers.mp4">Demo example</a></p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="img/screen.png" alt="screen">
+</div>
+</div>
 </div>
 </div>
 
@@ -204,7 +370,28 @@
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_drawing_with_many_layers">Drawing with many layers</a>
+   <a href="#_opening_the_panel">Opening the panel</a>
+  </li>
+  <li level="1">
+   <a href="#_the_layer_rows">The layer rows</a>
+  </li>
+  <li level="2">
+   <a href="#_freeze_vs_lock_two_different_ideas">Freeze vs. Lock - two different ideas</a>
+  </li>
+  <li level="1">
+   <a href="#_header_controls_act_on_all_layers_at_once">Header controls - act on all layers at once</a>
+  </li>
+  <li level="1">
+   <a href="#_the_button_strip">The button strip</a>
+  </li>
+  <li level="1">
+   <a href="#_click_an_element_to_find_its_layer">Click an element to find its layer</a>
+  </li>
+  <li level="1">
+   <a href="#_good_to_know">Good to know</a>
+  </li>
+  <li level="1">
+   <a href="#_cleaning_up_a_layered_drawing">Cleaning up a layered drawing</a>
   </li>
  </ul>
 </aside>
